@@ -46,6 +46,7 @@ authorProdOverTime <- function(M,k=10, graph=TRUE){
   
   df2=as.data.frame(df2)
   df2$Author=factor(df2$Author,levels=AU[1:k])
+  df2 <- na.omit(df2)
   #theme_set(theme_bw())
   
 
